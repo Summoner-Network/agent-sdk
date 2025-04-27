@@ -7,7 +7,7 @@ from summoner.client import SummonerClient
 from aioconsole import ainput
 
 if __name__ == "__main__":
-    myagent = SummonerClient(name="MyAgent", option = "python")
+    myagent = SummonerClient(name="SpeechAgent", option = "python")
 
     @myagent.receive(route="custom_receive")
     async def custom_receive(msg):
